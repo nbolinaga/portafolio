@@ -215,4 +215,14 @@ div.experience i{
 div.experience img{
   width: 50%;
   height: auto;
+  transition: all 2s ease-in-out;
 }
+div.experience a:hover{
+  color: var(--det);
+}
+div.experience img:hover{
+  animation:spin 4s ease-in-out infinite;
+}
+@-moz-keyframes spin { 50% { -moz-transform: scaleX(-1); } }
+@-webkit-keyframes spin { 50% { -webkit-transform: scaleX(-1); } }
+@keyframes spin { 50% { -webkit-transform: scaleX(-1); transform:scaleX(-1); } }
