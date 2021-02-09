@@ -19,7 +19,7 @@ izq.addEventListener('click',function(){
     currentImg -= 1
     imgContainer.style.backgroundImage = "url(" + imagenes[currentImg] + ")";
   }
-})
+});
 
 der.addEventListener('click',function(){
     if(currentImg == 2){
@@ -29,4 +29,4 @@ der.addEventListener('click',function(){
         currentImg += 1
         imgContainer.style.backgroundImage = "url(" + imagenes[currentImg] + ")";
     }
-})
+});
