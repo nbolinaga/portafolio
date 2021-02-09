@@ -1,11 +1,12 @@
+/* VARIABLES ------------------------------------------------------------------------------- */
 :root{
-  --titulos: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+  --titulos: "Montserrat", Arial, Helvetica, sans-serif;
   --texto: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --main:#AD0E12;
-  --det: #242423;
-  --back: #E4DED2;
+  --main:#118ab2;
+  --det: #E4DED2;
+  --back: #242423;
 }
-
+/* GLOBALES ------------------------------------------------------------------------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,4 +26,32 @@ p {
 
 html {
   background-color: var(--back);
+}
+a{
+  text-decoration: none;
+  color: var(--main);
+  font-family: var(--titulos);
+  font-weight: bold;
+}
+a:visited{
+  color: var(--main);
+}
+/* NAVBAR ------------------------------------------------------------------------------- */
+img#nav-logo{
+  height: 5vh;
+  margin-right: 2rem;
+}
+ul#nav-list{
+  background-color: var(--det);
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+li.nav-item{
+  display: inline;
+}
+li.nav-item:hover a{
+  color: var(--back);
 }
