@@ -40,7 +40,23 @@ a:visited{
 h2.subtitle{
   font-size: 3vw;
 }
+/* SCROLLBAR ------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 1vw;
+  background-color: var(--main);
+  background-position: bottom;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--det);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  var(--det);
+  min-height: 20px;
+}
 /* NAVBAR ------------------------------------------------------------------------------- */
 img#nav-logo{
   height: 5vh;
@@ -82,7 +98,7 @@ div#hero-flechas{
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width:100vw;
+  width: 100vw;
   top: 50%;
   left: 0;
   transform: translate(0%, -50%);
@@ -95,9 +111,9 @@ div#hero-flechas p.flecha{
   cursor: pointer;
 }
 section#hero::before{
-  content: "Mi nombre es Nicolas Bolinaga, bienvenido a mi portafolio";
+  content: "Mi nombre es Nicolas Bolinaga, bienvenido a mi portafolio ";
   position: absolute;
-  width: 100vw;
+  width: 98vw;
   top: 50%;
   left: 0;
   transform: translate(0%, -50%);
