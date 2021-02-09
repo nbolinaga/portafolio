@@ -30,3 +30,42 @@ der.addEventListener('click',function(){
         imgContainer.style.backgroundImage = "url(" + imagenes[currentImg] + ")";
     }
 });
+
+var skills = {
+    "HTML": 95,
+    "CSS": 95,
+    "ILLUSTRATOR/PHOTOSHOP": 90,
+    "VUE": 85,
+    "JAVACRIPT": 80,
+    "PYTHON": 80,
+    "JAVA": 75,
+    "UI/UX": 70,
+    "ANGULAR": 65,
+}
+
+var skillEl = document.getElementById('skills');
+
+for(key in skills){
+    var skill = document.createElement('div');
+    skill.setAttribute('class','skill-container');
+    var bar = document.createElement('div');
+    bar.setAttribute('class', 'skill-bar');
+    var fill = document.createElement('div');
+    fill.setAttribute('class', 'skill-fill');
+    fill.style.width = (skills[key] + '%');
+    var fillTitle = document.createElement('p');
+    fillTitle.setAttribute('class', 'fill-title')
+    var title = document.createElement('h4');
+    title.setAttribute('class', 'skill-title');
+    
+    fillTitle.innerHTML = skills[key] + '%';
+    title.innerHTML = key;
+
+    
+    fill.append(title);
+    skill.append(bar);
+    bar.append(fill);
+    bar.append(fillTitle)
+
+    skillEl.append(skill);
+}
