@@ -119,6 +119,11 @@ section#about h3{
   font-size: 2rem;
   margin: 3rem;
 }
+section#about img#yoP{
+  width: 30%;
+  outline: 1vh solid var(--det);
+  margin: 2rem;
+}
 section#about p.aboutMe{
   font-size: 1.75rem;
   width: 60%;
