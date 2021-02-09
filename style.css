@@ -37,6 +37,10 @@ a{
 a:visited{
   color: var(--main);
 }
+h2.subtitle{
+  font-size: 3vw;
+}
+
 /* NAVBAR ------------------------------------------------------------------------------- */
 img#nav-logo{
   height: 5vh;
@@ -44,12 +48,15 @@ img#nav-logo{
 
 }
 ul#nav-list{
+  position: fixed;
+  width: 100vw;
   background-color: var(--det);
   height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
+  z-index: 999;
 }
 li.nav-item{
   display: inline;
@@ -57,9 +64,10 @@ li.nav-item{
 li.nav-item:hover a{
   color: var(--back);
 }
-/* HERO ------------------------------------------------------------------------------- */
+/* HERO ---------------------------------------------------------------------------------- */
 section#hero{
   position: relative;
+  top: 8vh;
   overflow-x: hidden;
 }
 section#hero #img-container{
@@ -101,3 +109,53 @@ section#hero::before{
   background-color: rgba(36, 36, 35, .9);
   padding: 2rem;
 }
+/* ABOUT ------------------------------------------------------------------------------- */
+section#about{
+  padding: 4rem;
+  text-align: center;
+  margin-top: 10vh;
+}
+section#about h3{
+  font-size: 2rem;
+  margin: 3rem;
+}
+section#about p.aboutMe{
+  font-size: 1.75rem;
+  width: 60%;
+  margin: 2rem auto;
+}
+div#objetivos {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* objetivos */
+ul#objIzq{
+  float: left;
+}
+ul#objDer{
+  float: right;
+}
+ul#objIzq, ul#objDer{
+  list-style: none;
+  background-color: var(--det);
+  padding: 3rem;
+  width: 40%;
+  height: 100%;
+  text-align: justify;
+}
+ul#objIzq h4, ul#objDer h4{
+  font-size: 1.5rem;
+  color: var(--back);
+}
+ul#objIzq p, ul#objDer p{
+  color: var(--main);
+  margin: 2rem;
+  text-align: left;
+}
+ul#objIzq i, ul#objDer i{
+  font-size: 1.5rem;
+  color: var(--main);
+  margin: 0 2rem 0 -2rem;
+}
+/* EXPERIENCES ------------------------------------------------------------------------------- */
