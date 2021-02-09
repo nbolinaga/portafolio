@@ -3,8 +3,9 @@
   --titulos: "Montserrat", Arial, Helvetica, sans-serif;
   --texto: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --main:#118ab2;
-  --det: #E4DED2;
-  --back: #242423;
+  --det: #242423;
+  --back: #E4DED2;
+  --alt: #fb8500;
 }
 /* GLOBALES ------------------------------------------------------------------------------- */
 * {
@@ -40,6 +41,7 @@ a:visited{
 img#nav-logo{
   height: 5vh;
   margin-right: 2rem;
+
 }
 ul#nav-list{
   background-color: var(--det);
@@ -54,4 +56,48 @@ li.nav-item{
 }
 li.nav-item:hover a{
   color: var(--back);
+}
+/* HERO ------------------------------------------------------------------------------- */
+section#hero{
+  position: relative;
+  overflow-x: hidden;
+}
+section#hero #img-container{
+  background:url('./assets/yo.png');
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  transition: all .5s ease-in-out;
+  background-position-x: left;
+}
+div#hero-flechas{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width:100vw;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  padding: 0 2rem;
+}
+div#hero-flechas p.flecha{
+  color: var(--back);
+  font-size: 3vw;
+  font-family: var(--texto);
+  cursor: pointer;
+}
+section#hero::before{
+  content: "Mi nombre es Nicolas Bolinaga, bienvenido a mi portafolio";
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  font-family: var(--titulos);
+  font-size: 2.5vw;
+  text-align: center;
+  font-weight: bold;
+  color: var(--back);
+  background-color: rgba(36, 36, 35, .9);
+  padding: 2rem;
 }
