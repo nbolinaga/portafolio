@@ -180,3 +180,81 @@ ul#objIzq i, ul#objDer i{
   margin: 0 2rem 0 -2rem;
 }
 /* EXPERIENCES ------------------------------------------------------------------------------- */
+section#experience{
+  padding: 4rem;
+  text-align: center;
+
+}
+section#experience div#exp-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  
+}
+div#exp-container div.experience{
+  width: 25vw;
+  height: auto;
+  outline: .25rem solid var(--det);
+  padding: 2rem;
+}
+div.experience h3{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--det);
+}
+div.experience p{
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+div.experience i{
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--main);
+}
+div.experience img{
+  width: 50%;
+  height: auto;
+  transition: all 2s ease-in-out;
+}
+div.experience a:hover{
+  color: var(--det);
+}
+div.experience img:hover{
+  animation:spin 4s ease-in-out infinite;
+}
+@-moz-keyframes spin { 50% { -moz-transform: scaleX(-1); } }
+@-webkit-keyframes spin { 50% { -webkit-transform: scaleX(-1); } }
+@keyframes spin { 50% { -webkit-transform: scaleX(-1); transform:scaleX(-1); } }
+
+/* SKILLS ------------------------------------------------------------------------------- */
+section#skills{
+  padding: 0 4rem;
+  text-align: center;
+}
+section#skills div.skill-container{
+  margin: 2rem;
+}
+div.skill-container div.skill-bar{
+  background-color: var(--det);
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+}
+div.skill-bar div.skill-fill{
+  background-color: var(--main);
+  height: 2rem;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+}
+.fill-title{
+  color: var(--back);
+  margin-left: 1rem;
+}
+.skill-title{
+  color: var(--det);
+  margin-left: 2rem;
+}
