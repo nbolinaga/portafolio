@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+  color: #AD0E12;
+}
+
+p {
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5vh;
+  color: #242423;
+}
+
+html {
+  background-color: #E4DED2;
+}
