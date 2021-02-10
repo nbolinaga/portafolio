@@ -69,3 +69,17 @@ for(key in skills){
 
     skillEl.append(skill);
 }
+
+var nameInput = document.getElementById('name');
+var emailInput = document.getElementById('email');
+var message = document.getElementById('message');
+
+document.getElementById('form').addEventListener('submit', function (e) {
+
+    //prevent the normal submission of the form
+    e.preventDefault();
+
+    console.log(`Nombre: ${nameInput.value}`);    
+    console.log(`Email: ${emailInput.value}`);    
+    console.log(`Mensaje: ${message.value}`);    
+});
