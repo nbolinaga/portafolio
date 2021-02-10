@@ -1,3 +1,4 @@
+// HERO -------------------------------------------------------------------------------------
 var izq = document.getElementById('izq');
 var der = document.getElementById('der');
 
@@ -30,7 +31,7 @@ der.addEventListener('click',function(){
         imgContainer.style.backgroundImage = "url(" + imagenes[currentImg] + ")";
     }
 });
-
+// SKILLS -------------------------------------------------------------------------------------
 var skills = {
     "HTML": 95,
     "CSS": 95,
@@ -70,13 +71,13 @@ for(key in skills){
     skillEl.append(skill);
 }
 
+// FORM -------------------------------------------------------------------------------------
 var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
 var message = document.getElementById('message');
 
 document.getElementById('form').addEventListener('submit', function (e) {
 
-    //prevent the normal submission of the form
     e.preventDefault();
 
     console.log(`Nombre: ${nameInput.value}`);    

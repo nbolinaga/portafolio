@@ -1,10 +1,10 @@
 /* VARIABLES ------------------------------------------------------------------------------- */
-:root{
+:root {
   --titulos: "Montserrat", Arial, Helvetica, sans-serif;
   --texto: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --main:#118ab2;
+  --main: #118ab2;
   --det: #242423;
-  --back: #E4DED2;
+  --back: #e4ded2;
 }
 /* GLOBALES ------------------------------------------------------------------------------- */
 * {
@@ -13,7 +13,13 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
   font-family: var(--titulos);
   color: var(--main);
 }
@@ -27,16 +33,16 @@ p {
 html {
   background-color: var(--back);
 }
-a{
+a {
   text-decoration: none;
   color: var(--main);
   font-family: var(--titulos);
   font-weight: bold;
 }
-a:visited{
+a:visited {
   color: var(--main);
 }
-h2.subtitle{
+h2.subtitle {
   font-size: 3vw;
 }
 /* SCROLLBAR ------------------------------------------------------------------------------- */
@@ -53,17 +59,16 @@ h2.subtitle{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:  var(--det);
+  background: var(--det);
   min-height: 20px;
 }
 /* NAVBAR ------------------------------------------------------------------------------- */
-img#nav-logo{
+img#nav-logo {
   height: 5vh;
   margin-right: 2rem;
-
 }
 
-ul#nav-list{
+ul#nav-list {
   position: fixed;
   width: 100vw;
   background-color: var(--det);
@@ -73,30 +78,30 @@ ul#nav-list{
   align-items: center;
   padding: 0 4rem;
   z-index: 999;
-  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-li.nav-item{
+li.nav-item {
   display: inline;
 }
-li.nav-item:hover a{
+li.nav-item:hover a {
   color: var(--back);
 }
 /* HERO ---------------------------------------------------------------------------------- */
-section#hero{
+section#hero {
   position: relative;
   top: 8vh;
   overflow-x: hidden;
 }
-section#hero #img-container{
-  background:url('./assets/yo.png');
+section#hero #img-container {
+  background: url("./assets/yo.png");
   background-size: cover;
   width: 100vw;
   height: 70vh;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-position-x: left;
-  box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.57)
+  box-shadow: inset 0px -10px 15px 0px rgba(0, 0, 0, 0.57);
 }
-div#hero-flechas{
+div#hero-flechas {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -106,13 +111,13 @@ div#hero-flechas{
   transform: translate(0%, -50%);
   padding: 0 2rem;
 }
-div#hero-flechas p.flecha{
+div#hero-flechas p.flecha {
   color: var(--back);
   font-size: 3vw;
   font-family: var(--texto);
   cursor: pointer;
 }
-section#hero::before{
+section#hero::before {
   content: "Mi nombre es Nicolas Bolinaga, bienvenido a mi portafolio ";
   position: absolute;
   width: 98vw;
@@ -124,26 +129,26 @@ section#hero::before{
   text-align: center;
   font-weight: bold;
   color: var(--back);
-  background-color: rgba(36, 36, 35, .9);
+  background-color: rgba(36, 36, 35, 0.9);
   padding: 2rem;
 }
 /* ABOUT ------------------------------------------------------------------------------- */
-section#about{
+section#about {
   padding: 4rem;
   text-align: center;
   margin-top: 10vh;
 }
-section#about h3{
+section#about h3 {
   font-size: 2rem;
   margin: 3rem;
 }
-section#about img#yoP{
+section#about img#yoP {
   width: 30%;
   outline: 1vh solid var(--det);
   margin: 2rem;
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-section#about p.aboutMe{
+section#about p.aboutMe {
   font-size: 1.75rem;
   width: 60%;
   margin: 2rem auto;
@@ -154,94 +159,109 @@ div#objetivos {
   justify-content: space-evenly;
 }
 /* objetivos */
-ul#objIzq{
+ul#objIzq {
   float: left;
 }
-ul#objDer{
+ul#objDer {
   float: right;
 }
-ul#objIzq, ul#objDer{
+ul#objIzq,
+ul#objDer {
   list-style: none;
   background-color: var(--det);
   padding: 3rem;
   width: 40%;
   height: 100%;
   text-align: justify;
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-ul#objIzq h4, ul#objDer h4{
+ul#objIzq h4,
+ul#objDer h4 {
   font-size: 1.5rem;
   color: var(--back);
 }
-ul#objIzq p, ul#objDer p{
+ul#objIzq p,
+ul#objDer p {
   color: var(--main);
   margin: 2rem;
   text-align: left;
 }
-ul#objIzq i, ul#objDer i{
+ul#objIzq i,
+ul#objDer i {
   font-size: 1.5rem;
   color: var(--main);
   margin: 0 2rem 0 -2rem;
 }
 /* EXPERIENCES ------------------------------------------------------------------------------- */
-section#experience{
+section#experience {
   padding: 4rem;
   text-align: center;
-
 }
-section#experience div#exp-container{
+section#experience div#exp-container {
   display: flex;
   justify-content: space-between;
   padding: 4rem;
-  
 }
-div#exp-container div.experience{
+div#exp-container div.experience {
   width: 25vw;
   height: auto;
-  outline: .25rem solid var(--det);
+  outline: 0.25rem solid var(--det);
   padding: 2rem;
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-div.experience h3{
+div.experience h3 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--det);
 }
-div.experience p{
+div.experience p {
   font-size: 1.25rem;
   text-align: center;
   margin: 2rem 0;
 }
-div.experience i{
+div.experience i {
   font-size: 2.5rem;
   text-align: center;
   color: var(--main);
 }
-div.experience img{
+div.experience img {
   width: 50%;
   height: auto;
   transition: all 2s ease-in-out;
 }
-div.experience a:hover{
+div.experience a:hover {
   color: var(--det);
 }
-div.experience img:hover{
-  animation:spin 4s ease-in-out infinite;
+div.experience img:hover {
+  animation: spin 4s ease-in-out infinite;
 }
-@-moz-keyframes spin { 50% { -moz-transform: scaleX(-1); } }
-@-webkit-keyframes spin { 50% { -webkit-transform: scaleX(-1); } }
-@keyframes spin { 50% { -webkit-transform: scaleX(-1); transform:scaleX(-1); } }
+@-moz-keyframes spin {
+  50% {
+    -moz-transform: scaleX(-1);
+  }
+}
+@-webkit-keyframes spin {
+  50% {
+    -webkit-transform: scaleX(-1);
+  }
+}
+@keyframes spin {
+  50% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
 
 /* SKILLS ------------------------------------------------------------------------------- */
-section#skills{
+section#skills {
   padding: 0 4rem;
   text-align: center;
 }
-section#skills div.skill-container{
+section#skills div.skill-container {
   margin: 2rem;
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-div.skill-container div.skill-bar{
+div.skill-container div.skill-bar {
   background-color: var(--det);
   width: 100%;
   height: 2rem;
@@ -249,34 +269,36 @@ div.skill-container div.skill-bar{
   justify-content: justify;
   align-items: center;
 }
-div.skill-bar div.skill-fill{
+div.skill-bar div.skill-fill {
   background-color: var(--main);
   height: 2rem;
   display: flex;
   justify-content: justify;
   align-items: center;
 }
-.fill-title{
+.fill-title {
   color: var(--back);
   margin-left: 1rem;
   font-size: 1rem;
 }
-.skill-title{
+.skill-title {
   color: var(--det);
   margin-left: 2rem;
 }
 /* CONTACT ------------------------------------------------------------------------------- */
-section#contact{
+section#contact {
   padding: 4rem;
   text-align: center;
 }
-section#contact form{
+section#contact form {
   margin: 2rem;
 }
-section#contact form label{
+section#contact form label {
   font-size: 2rem;
 }
-section#contact form input.submit, section#contact form input.inputs, section#contact form textarea{
+section#contact form input.submit,
+section#contact form input.inputs,
+section#contact form textarea {
   box-shadow: none;
   border: none;
   display: block;
@@ -284,24 +306,26 @@ section#contact form input.submit, section#contact form input.inputs, section#co
   color: var(--back);
   font-family: var(--titulos);
   font-size: 1.5rem;
-  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.7);
 }
-section#contact form input.inputs, section#contact form textarea{
+section#contact form input.inputs,
+section#contact form textarea {
   width: 50%;
   text-align: center;
   height: 1rem;
-  outline: .25rem solid var(--det);
+  outline: 0.25rem solid var(--det);
   padding: 1.5rem;
+  color: var(--det);
 }
-section#contact form textarea{
+section#contact form textarea {
   height: 10vh;
 }
-section#contact form input.submit{
+section#contact form input.submit {
   background-color: var(--main);
   width: 20%;
   padding: 1rem;
 }
-ul#info-list{
+ul#info-list {
   list-style: none;
   padding: 3rem;
   width: 100%;
@@ -310,13 +334,13 @@ ul#info-list{
   display: block;
   margin: 0 auto;
 }
-ul#info-list li.contact-info{
+ul#info-list li.contact-info {
   display: inline;
 }
-ul#info-list i, ul#info-list i{
+ul#info-list i,
+ul#info-list i {
   font-size: 4rem;
   color: var(--main);
   margin: 2rem 0 1rem 0;
   cursor: pointer;
-  
 }
