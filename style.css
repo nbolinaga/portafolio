@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
   font-family: var(--titulos);
   color: var(--main);
 }
@@ -253,8 +253,62 @@ div.skill-bar div.skill-fill{
 .fill-title{
   color: var(--back);
   margin-left: 1rem;
+  font-size: 1rem;
 }
 .skill-title{
   color: var(--det);
   margin-left: 2rem;
+}
+/* CONTACT ------------------------------------------------------------------------------- */
+section#contact{
+  padding: 4rem;
+  text-align: center;
+}
+section#contact form{
+  margin: 2rem;
+}
+section#contact form label{
+  font-size: 2rem;
+}
+section#contact form input.submit, section#contact form input.inputs, section#contact form textarea{
+  box-shadow: none;
+  border: none;
+  display: block;
+  margin: 1.5rem auto;
+  color: var(--back);
+  font-family: var(--titulos);
+  font-size: 1.5rem;
+}
+section#contact form input.inputs, section#contact form textarea{
+  width: 50%;
+  text-align: center;
+  height: 1rem;
+  outline: .25rem solid var(--det);
+  padding: 1.5rem;
+}
+section#contact form textarea{
+  height: 10vh;
+}
+section#contact form input.submit{
+  background-color: var(--main);
+  width: 20%;
+  padding: 1rem;
+}
+ul#info-list{
+  list-style: none;
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+ul#info-list li.contact-info{
+  display: inline;
+}
+ul#info-list i, ul#info-list i{
+  font-size: 4rem;
+  color: var(--main);
+  margin: 2rem 0 1rem 0;
+  cursor: pointer;
 }
