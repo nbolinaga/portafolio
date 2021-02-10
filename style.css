@@ -5,7 +5,6 @@
   --main:#118ab2;
   --det: #242423;
   --back: #E4DED2;
-  --alt: #fb8500;
 }
 /* GLOBALES ------------------------------------------------------------------------------- */
 * {
@@ -63,6 +62,7 @@ img#nav-logo{
   margin-right: 2rem;
 
 }
+
 ul#nav-list{
   position: fixed;
   width: 100vw;
@@ -73,6 +73,7 @@ ul#nav-list{
   align-items: center;
   padding: 0 4rem;
   z-index: 999;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.7);
 }
 li.nav-item{
   display: inline;
@@ -93,6 +94,7 @@ section#hero #img-container{
   height: 70vh;
   transition: all .5s ease-in-out;
   background-position-x: left;
+  box-shadow: inset 0px -10px 15px 0px rgba(0,0,0,0.57)
 }
 div#hero-flechas{
   position: absolute;
@@ -139,6 +141,7 @@ section#about img#yoP{
   width: 30%;
   outline: 1vh solid var(--det);
   margin: 2rem;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
 }
 section#about p.aboutMe{
   font-size: 1.75rem;
@@ -164,6 +167,7 @@ ul#objIzq, ul#objDer{
   width: 40%;
   height: 100%;
   text-align: justify;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
 }
 ul#objIzq h4, ul#objDer h4{
   font-size: 1.5rem;
@@ -196,6 +200,7 @@ div#exp-container div.experience{
   height: auto;
   outline: .25rem solid var(--det);
   padding: 2rem;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
 }
 div.experience h3{
   font-size: 1.5rem;
@@ -234,6 +239,7 @@ section#skills{
 }
 section#skills div.skill-container{
   margin: 2rem;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
 }
 div.skill-container div.skill-bar{
   background-color: var(--det);
@@ -278,6 +284,7 @@ section#contact form input.submit, section#contact form input.inputs, section#co
   color: var(--back);
   font-family: var(--titulos);
   font-size: 1.5rem;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.7);
 }
 section#contact form input.inputs, section#contact form textarea{
   width: 50%;
@@ -311,4 +318,5 @@ ul#info-list i, ul#info-list i{
   color: var(--main);
   margin: 2rem 0 1rem 0;
   cursor: pointer;
+  
 }
